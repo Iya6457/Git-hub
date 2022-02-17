@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+*{font-family: 'Inconsolata', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 90hv;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 250px;
+    height: 400px;
+    margin: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly;
+    transition: 0.3s;
+    border: 1px solid rgb(163,163.163);
+    border-radius: 10px;
+}
+.card:hover{
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.4);
+}
+
+.card img {
+    width:150px;
+    height: 150px;
+}
+.card h1{
+    font-size:18px;
+    text-align: center;
+
+}
+.card .cost{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    font-weight: 700;
+    color:red;
+
+}
+
+.card button{
+    font-weight: 700;
+    font-size: 20px;
+    padding: 5px;
+
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255,43,43);
+    color:white;
+    border-radius: 10px;
+    border:none;
+    cursor: pointer;
+    transition: 3s;
+
+}
+
+.card button img{
+    width: 24px;
+    height: 24px;
+}
+
+.products-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:space-around;
+
+}
